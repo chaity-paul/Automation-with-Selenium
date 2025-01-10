@@ -22,9 +22,9 @@ public class NameLocator {
         driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
         Thread.sleep(3000);
 
-        WebElement name = driver.findElement(By.id("name"));
-        name.sendKeys("Chaity Paul");
-        Thread.sleep(5000);
+        WebElement mobile = driver.findElement(By.name("mobile"));
+        mobile.sendKeys("0123456789");
+        Thread.sleep(3000);
     }
     @AfterSuite
     public void closeBrowser(){
