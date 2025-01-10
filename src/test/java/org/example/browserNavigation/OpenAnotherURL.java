@@ -21,6 +21,9 @@ public class OpenAnotherURL {
         Thread.sleep(3000);
         driver.navigate().to("https://www.tutorialspoint.com/selenium/practice/register.php");
         Thread.sleep(3000);
+        driver.navigate().back();
+        Thread.sleep(3000);
+        //driver.navigate().forward(); //for forward;
     }
     @AfterSuite
     public void closeChromeBrowser(){
